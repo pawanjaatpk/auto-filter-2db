@@ -28,7 +28,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tgfiles')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002125507112'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
@@ -39,7 +39,7 @@ URL = environ.get('URL', 'https://t.me/me2yous')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002125507112'))
 TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
 TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
